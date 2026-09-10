@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rutas Eficientes — Aprilon</title>
 <meta name="description" content="Rutas Eficientes, el sistema de reparto desarrollado para Aprilon: cargá las entregas del día, el sistema calcula el recorrido más corto y el repartidor lo sigue desde el teléfono.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
@@ -29,6 +31,8 @@
   nav .wrap{display:flex;align-items:center;gap:20px;padding-block:14px;flex-wrap:wrap}
   .logo{font-weight:800;font-size:19px;display:flex;align-items:center;gap:9px}
   .dot{width:11px;height:11px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
+  .logo .mark{height:30px;width:auto;border-radius:7px;display:block}
+  .hero-mark{height:96px;width:auto;border-radius:14px;margin-bottom:22px;display:block}
   nav a.link{margin-left:auto;text-decoration:none;color:var(--muted);font-size:14.5px}
   nav a.link+a.link{margin-left:0}
   .btn{display:inline-block;background:var(--brand);color:var(--on-brand);text-decoration:none;font-weight:700;
@@ -111,7 +115,7 @@
 <body>
 
 <nav><div class="wrap">
-  <div class="logo"><span class="dot"></span>Rutas Eficientes</div>
+  <div class="logo"><img class="mark" src="logo.png" alt="Rutas Eficientes" width="202" height="150">Rutas Eficientes</div>
   <a class="link" href="#producto">Producto</a>
   <a class="link" href="#como">Cómo funciona</a>
   <a class="link" href="#proyecto">El proyecto</a>
@@ -120,6 +124,7 @@
 </div></nav>
 
 <header class="hero"><div class="wrap">
+  <img class="hero-mark" src="logo.png" alt="" width="202" height="150">
   <span class="pill">Rutas Eficientes</span>
   <h1>Las entregas del día,<br>en el <span>recorrido más corto</span>.</h1>
   <p class="lead">Rutas Eficientes toma las direcciones que cargás, calcula el orden óptimo de las paradas considerando el tráfico real, y se la entrega al repartidor en el teléfono. Sin planillas, sin recorridos armados de memoria.</p>
