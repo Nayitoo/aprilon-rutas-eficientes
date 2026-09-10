@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rutas Eficientes — Aprilon</title>
-<meta name="description" content="Aprilon Rutas Eficientes: cargá las entregas del día, el sistema calcula el recorrido más corto y el repartidor lo sigue desde el teléfono.">
+<meta name="description" content="Rutas Eficientes, el sistema de reparto desarrollado para Aprilon: cargá las entregas del día, el sistema calcula el recorrido más corto y el repartidor lo sigue desde el teléfono.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
 <style>
   :root{
     --brand:#2f7d54; --brand-2:#3fa06b; --brand-soft:#e8f3ec;
-    --ink:#141815; --muted:#5c635e; --line:#e2e6e3; --bg:#fbfcfa; --card:#fff;
+    --ink:#141815; --muted:#5c635e; --line:#dde3de; --bg:#eaefe9; --card:#f6f9f4; --on-brand:#f2f7f3;
   }
   @media (prefers-color-scheme:dark){
     :root:not([data-theme="light"]){
-      --ink:#eef2ef; --muted:#a3ada7; --line:#2a2f2c; --bg:#12140f; --card:#191c18; --brand-soft:#1b2a21;
+      --ink:#eef2ef; --muted:#a3ada7; --line:#2a2f2c; --bg:#12140f; --card:#191c18; --brand-soft:#1b2a21; --on-brand:#f2f7f3;
     }
   }
   *{box-sizing:border-box}
@@ -29,7 +29,7 @@
   .dot{width:11px;height:11px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 4px var(--brand-soft)}
   nav a.link{margin-left:auto;text-decoration:none;color:var(--muted);font-size:14.5px}
   nav a.link+a.link{margin-left:0}
-  .btn{display:inline-block;background:var(--brand);color:#fff;text-decoration:none;font-weight:700;
+  .btn{display:inline-block;background:var(--brand);color:var(--on-brand);text-decoration:none;font-weight:700;
        padding:12px 22px;border-radius:10px;border:1px solid var(--brand)}
   .btn.ghost{background:transparent;color:var(--brand)}
   header.hero{padding-block:72px 60px;border-bottom:1px solid var(--line)}
@@ -53,7 +53,7 @@
   ol.flow{list-style:none;counter-reset:f;padding:0;margin:0;display:grid;gap:14px;grid-template-columns:repeat(4,1fr)}
   ol.flow li{counter-increment:f;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
   ol.flow li:before{content:counter(f);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;
-    background:var(--brand);color:#fff;font-weight:800;margin-bottom:10px}
+    background:var(--brand);color:var(--on-brand);font-weight:800;margin-bottom:10px}
   ol.flow b{display:block;margin-bottom:4px}
   ol.flow span{color:var(--muted);font-size:14.5px}
   .team{display:grid;gap:16px;grid-template-columns:repeat(5,1fr)}
@@ -73,7 +73,7 @@
 <body>
 
 <nav><div class="wrap">
-  <div class="logo"><span class="dot"></span>Aprilon</div>
+  <div class="logo"><span class="dot"></span>Rutas Eficientes</div>
   <a class="link" href="#producto">Producto</a>
   <a class="link" href="#como">Cómo funciona</a>
   <a class="link" href="#proyecto">El proyecto</a>
@@ -83,7 +83,7 @@
 <header class="hero"><div class="wrap">
   <span class="pill">Rutas Eficientes</span>
   <h1>Las entregas del día,<br>en el <span>recorrido más corto</span>.</h1>
-  <p class="lead">Aprilon toma las direcciones que cargás, calcula el orden óptimo de las paradas considerando el tráfico real, y se la entrega al repartidor en el teléfono. Sin planillas, sin recorridos armados de memoria.</p>
+  <p class="lead">Rutas Eficientes toma las direcciones que cargás, calcula el orden óptimo de las paradas considerando el tráfico real, y se la entrega al repartidor en el teléfono. Sin planillas, sin recorridos armados de memoria.</p>
   <div class="cta">
     <a class="btn" href="#como">Ver cómo funciona</a>
     <a class="btn ghost" href="#proyecto">Sobre el proyecto</a>
@@ -92,7 +92,7 @@
 
 <section id="producto"><div class="wrap">
   <h2>Qué resuelve</h2>
-  <p class="sub">Una empresa textil que reparte todos los días pierde tiempo y combustible cuando el recorrido se arma a ojo. Aprilon convierte eso en un proceso repetible.</p>
+  <p class="sub">Una empresa textil que reparte todos los días pierde tiempo y combustible cuando el recorrido se arma a ojo. Rutas Eficientes convierte eso en un proceso repetible.</p>
   <div class="grid g3">
     <div class="card"><div class="ico">→</div><h3>Recorrido óptimo</h3><p>El sistema reordena las paradas para minimizar el trayecto total, con el tráfico del momento incluido en el cálculo.</p></div>
     <div class="card"><div class="ico">◎</div><h3>Seguimiento en vivo</h3><p>El repartidor ve la ruta sobre el mapa y su propia posición por GPS, y marca cada parada a medida que entrega.</p></div>
@@ -116,7 +116,7 @@
 
 <section id="proyecto"><div class="wrap">
   <h2>El proyecto</h2>
-  <p class="sub">Aprilon es el proyecto final de la Tecnicatura en Informática, desarrollado para una empresa textil real que reparte mercadería a diario. No es un caso de estudio inventado: el sistema está en uso y las decisiones se tomaron contra un problema concreto.</p>
+  <p class="sub">Rutas Eficientes es el proyecto final de la Tecnicatura en Informática, desarrollado para Aprilon, una empresa textil real que reparte mercadería a diario. No es un caso de estudio inventado: el sistema está en uso y las decisiones se tomaron contra un problema concreto.</p>
   <div class="grid g4">
     <div class="card"><h3>Backend</h3><p>PHP 8 con PDO sobre MySQL. 31 endpoints, sin framework.</p></div>
     <div class="card"><h3>Frontend</h3><p>Una sola página en HTML, CSS y JavaScript. Sin build, sin dependencias.</p></div>
@@ -142,7 +142,7 @@
 </div></section>
 
 <footer><div class="wrap">
-  Aprilon · Rutas Eficientes — Proyecto final de Tecnicatura en Informática, 2026.
+  Rutas Eficientes — Proyecto final de Tecnicatura en Informática, 2026. Desarrollado para Aprilon.
 </div></footer>
 
 </body>
